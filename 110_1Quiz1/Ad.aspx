@@ -9,8 +9,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-        </div>
+          <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/Ad.xml"></asp:XmlDataSource>
+        <asp:AdRotator ID="AdRotator1" runat="server" DataSourceID="XmlDataSource1" /> 
     </form>
 </body>
 </html>
